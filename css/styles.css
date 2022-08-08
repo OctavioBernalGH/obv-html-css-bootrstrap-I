@@ -8,6 +8,7 @@
     a lo largo del código */
     --blanco: #FFFFFF;
     --oscuro: #212121;
+    --primario: #a905b6;
     --secundario: #6f32be;
     --fuente-principal: 'Roboto Mono', monospace;
 }
@@ -38,4 +39,39 @@ h1, .h2-titulos{
 .spantitulo{
     font-size: 2rem;
     color: var(--secundario);
+}
+
+.contenedor{
+    /* tamaño del contenedor */
+    width: 100rem;
+    /* 0 top 0 bot auto izquierda auto derecha */
+    /* con auto se centra */
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-superior{
+    /* Habilitamos el display flex */
+    display: flex;
+    /* Se elije como se verá mediante justify-content */
+    justify-content: space-between
+}
+
+.navegacion-superior a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.navegacion-superior a:hover{
+    background-color: var(--primario);
+    color: black;
+}
+
+@media (min-width: 480px) {
+    
 }
