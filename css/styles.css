@@ -1,0 +1,41 @@
+/*
+ ===================
+|CUSTOM PROPIERTIES |
+ ===================
+*/
+:root{
+    /* Propiedades personalizadas que permiten reutilizarlas
+    a lo largo del código */
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --secundario: #6f32be;
+    --fuente-principal: 'Roboto Mono', monospace;
+}
+/*
+ =================================
+| Se utiliza para estandarizar el |
+| formato REM a lo largo del html |
+ =================================
+*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; 
+    /* 1rem = 10px */
+    font-family: var(--fuente-principal);
+}
+/*
+==================================
+*/
+
+
+h1, .h2-titulos{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.spantitulo{
+    font-size: 2rem;
+    color: var(--secundario);
+}
