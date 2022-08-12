@@ -120,7 +120,7 @@
     <section class="stacks">
         <h2>Contacto</h2>
         <!-- Formulario de contacto -->
-        <form action="" class="formulario">
+        <form action="php/index.php" method="POST"  class="formulario">
             <!-- Conjunto de elementos en formulario -->
             <fieldset>
                 <legend>Formulario de contacto</legend>
@@ -129,31 +129,31 @@
                     <!-- Campo nombre -->
                     <div class="campo">
                         <label for="">Nombre</label>
-                        <input class="input-text"  type="text" name="" id="" placeholder="Su nombre">
+                        <input id="nombre" class="input-text"  type="text" name="" id="" placeholder="Su nombre">
                     </div>
                     <!-- Campo apellidos -->
                     <div class="campo">
                         <label for="">Apellidos</label>
-                        <input class="input-text" type="text" name="" id="" placeholder="Sus apellidos">
+                        <input id="apellidos" class="input-text" type="text" name="" id="" placeholder="Sus apellidos">
                     </div>
                     <!-- Campo email -->
                     <div class="campo">
                         <label for="">E-mail</label>
-                        <input class="input-text"  type="email" name="" id="" placeholder="Su email">
+                        <input id="email" class="input-text"  type="email" name="" id="" placeholder="Su email">
                     </div>
                     <!-- Campo teléfono-->
                     <div class="campo">
                         <label for="">Teléfono</label>
-                        <input class="input-text"  type="text" name="" id="" placeholder="Su teléfono">
+                        <input id="telefono" class="input-text"  type="text" name="" id="" placeholder="Su teléfono">
                     </div>
                     <!-- Campo mensaje -->
                     <div class="campo">
                         <label for="">Mensaje</label>
-                        <textarea class="input-text"  name="" id="" cols="30" rows="5"></textarea>
+                        <textarea id="mensaje" class="input-text"  name="" id="" cols="30" rows="5"></textarea>
                     </div>
 
                     <div class="boton-enviar">
-                        <input class="boton" type="submit" value="Enviar">
+                        <input id="submit" class="boton" type="submit" value="Enviar">
                     </div>
                 </div>
             </fieldset>
