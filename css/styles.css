@@ -22,7 +22,18 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    /** Mover la página mejor hacia abajo */
+    scroll-snap-type: y mandatory;
 }
+
+/** Scroll snap. movimiento automatizadi al bajar */
+header,
+.sombra .stack,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 /** Selecciona todos los elementos del HTML */
 *,*:before, *:after{
     box-sizing: inherit;
@@ -253,4 +264,8 @@ RGBA en background color. */
 
 .boton-enviar input{
     width: 100%;
+}
+
+.footer{
+    text-align: center;
 }
