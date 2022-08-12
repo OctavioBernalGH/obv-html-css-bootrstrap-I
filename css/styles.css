@@ -154,7 +154,7 @@ RGBA en background color. */
 
 .sombra p{
     margin: 20px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.2em;
 }
 
@@ -175,6 +175,11 @@ RGBA en background color. */
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5rem;
         text-align: justify
+    }
+    .sombra p{
+        margin: 20px;
+        text-align: justify;
+        font-size: 1.2em;
     }
 }
 
