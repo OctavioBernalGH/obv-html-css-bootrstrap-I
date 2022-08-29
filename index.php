@@ -12,10 +12,10 @@
     $titulo = "MSG WEBPAGE PLESK".date('dd/mm/yyyy', time());
     
     $cuerpo = "Nombre: ".$nombre;
-    $cuerpo.= "Apellidos: ".$apellidos;
-    $cuerpo.= "E-Mail: ".$email;
-    $cuerpo.= "Teléfono: ".$telefono;
-    $cuerpo.= "Mensaje: ".$mensaje; 
+    $cuerpo.= "\nApellidos: ".$apellidos;
+    $cuerpo.= "\nE-Mail: ".$email;
+    $cuerpo.= "\nTeléfono: ".$telefono;
+    $cuerpo.= "\n\nMensaje: ".$mensaje; 
 
     mail($para, $titulo, $cuerpo);
     header("Location:index.html");
