@@ -18,5 +18,5 @@
     $cuerpo.= "Mensaje: ".$mensaje; 
 
     mail($para, $nombre, $titulo, $cuerpo);
-
+    header("Location:index.html");
 ?>
