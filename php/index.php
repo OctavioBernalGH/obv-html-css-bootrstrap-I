@@ -1,18 +1,22 @@
 <?php
-    $nombre = "$_POST"['nombre'];
-    $apellidos = "$_POST"['apellidos'];
-    $email = "$_POST"['email'];
-    $telefono = "&_POST"['telefono'];
-    $mensaje = "$_POST"['mensaje'];
+
+    // Variables de campos.
+    $nombre = "$_POST"['txtNombre'];
+    $apellidos = "$_POST"['txtApellidos'];
+    $email = "$_POST"['txtEmail'];
+    $telefono = "&_POST"['txtTelefono'];
+    $mensaje = "$_POST"['txtMensaje'];
+
+
     $para = 'octabevi@protonmail.com';
-    $titulo = 'MSG WEBPAGE PLESK';
-    $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
+    $titulo = "MSG WEBPAGE PLESK".date('dd/mm/yyyy', time());
     
-    if ("$_POST"['submit']) {
-    if (mail ($para, $titulo, $msjCorreo)) {
-    echo 'El mensaje se ha enviado';
-    } else {
-    echo 'Falló el envio';
-    }
-    }
+    $cuerpo = "Nombre: ".$nombre;
+    $cuerpo.= "Apellidos: ".$apellidos;
+    $cuerpo.= "E-Mail: ".$email;
+    $cuerpo.= "Teléfono: ".$telefono;
+    $cuerpo.= "Mensaje: ".$mensaje; 
+
+    mail($para, $nombre, $titulo, $cuerpo);
+
 ?>

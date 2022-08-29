@@ -260,6 +260,7 @@ RGBA en background color. */
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+    resize: none;
 }
 
 .boton-enviar input{
