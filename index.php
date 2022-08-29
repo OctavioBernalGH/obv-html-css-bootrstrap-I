@@ -17,6 +17,6 @@
     $cuerpo.= "Teléfono: ".$telefono;
     $cuerpo.= "Mensaje: ".$mensaje; 
 
-    mail($para, $nombre, $titulo, $cuerpo);
+    mail($para, $titulo, $cuerpo);
     header("Location:index.html");
 ?>
