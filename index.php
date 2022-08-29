@@ -1,11 +1,11 @@
 <?php
 
     // Variables de campos.
-    $nombre = "$_POST"['txtNombre'];
-    $apellidos = "$_POST"['txtApellidos'];
-    $email = "$_POST"['txtEmail'];
-    $telefono = "&_POST"['txtTelefono'];
-    $mensaje = "$_POST"['txtMensaje'];
+    $nombre = $_POST['txtNombre'];
+    $apellidos = $_POST['txtApellidos'];
+    $email = $_POST['txtEmail'];
+    $telefono = $_POST['txtTelefono'];
+    $mensaje = $_POST['txtMensaje'];
 
 
     $para = 'octabevi@protonmail.com';
@@ -18,5 +18,5 @@
     $cuerpo.= "Mensaje: ".$mensaje; 
 
     mail($para, $nombre, $titulo, $cuerpo);
-
+    header("Location:index.html");
 ?>
